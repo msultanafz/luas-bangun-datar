@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="shortcut icon" href="../img/pavicon.png" type="image/x-icon" />
+    <title>Kalkulator Bangun Datar</title>
+    <style>
+      body {
+        opacity: 1;
+        background-size: cover;
+        transition: opacity 0.5s ease-in-out, background-image 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body id="body" class="min-h-screen bg-cover bg-no-repeat bg-center">
+    <header
+      class="flex bg-opacity-70 rounded-b-3xl bg-black py-3 font-bold pb-4 mb-6"
+    >
+      <!-- Judul Website -->
+      <h1
+        class="text-white m-auto text-center text-3xl sm:text-4xl md:text-5xl tracking-widest px-5 lg:px-0"
+      >
+        Kalkulator Hitung Luas Bangun Datar
+      </h1>
+    </header>
+    <main>
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-y-10 sm:gap-y-14 md:gap-x-12 md:gap-y-6 lg:gap-10 py-6 px-12 sm:px-14 md:px-20 lg:px-32"
+      >
+        <!-- Segitiga -->
+        <div
+          class="flex flex-col items-center justify-center h-36 w-36 xs:h-38 xs:w-38 sm:h-44 sm:w-44 md:h-52 md:w-52 bg-black text-white rounded-2xl bg-opacity-70 pb-2 hover:scale-105 hover:bg-opacity-80 duration-300 cursor-pointer shadow-md shadow-black backdrop-blur-[2px]"
+          onclick="window.location.href = './html/segitiga.html'"
+        >
+          <img
+            src="../img/shape.png"
+            alt="Segitiga"
+            class="h-28 sm:h-40 md:h-52 -mb-2"
+          />
+          <h2
+            class="font-semibold text-base sm:text-xl md:text-2xl tracking-wide pb-1 sm:pb-2"
+          >
+            Segitiga
+          </h2>
+        </div>
+
+        <!-- Lingkaran -->
+        <div
+          class="flex flex-col items-center justify-center h-36 w-36 xs:h-38 xs:w-38 sm:h-44 sm:w-44 md:h-52 md:w-52 bg-black text-white rounded-2xl bg-opacity-70 pb-2 hover:scale-105 hover:bg-opacity-80 duration-300 cursor-pointer shadow-md shadow-black backdrop-blur-[2px]"
+          onclick="window.location.href = './html/lingkaran.html'"
+        >
+          <img
+            src="../img/ellipse.png"
+            alt="Lingkaran"
+            class="h-28 sm:h-36 md:h-40 -mb-2 md:-mb-1"
+          />
+          <h2
+            class="font-semibold text-base sm:text-xl md:text-2xl pb-1 tracking-wide"
+          >
+            Lingkaran
+          </h2>
+        </div>
+
+        <!-- Persegi -->
+        <div
+          class="flex flex-col items-center justify-center h-36 w-36 xs:h-38 xs:w-38 sm:h-44 sm:w-44 md:h-52 md:w-52 bg-black text-white rounded-2xl bg-opacity-70 pb-2 hover:scale-105 hover:bg-opacity-80 duration-300 cursor-pointer shadow-md shadow-black backdrop-blur-[2px]"
+          onclick="window.location.href = './html/persegi.html'"
+        >
+          <div
+            class="h-20 w-20 sm:h-24 sm:w-24 md:h-[7.5rem] md:w-[7.5rem] bg-green-600 mb-2 md:mb-3 mt-3 sm:mt-5"
+          ></div>
+          <h2
+            class="font-semibold text-base sm:text-xl md:text-2xl tracking-wide"
+          >
+            Persegi
+          </h2>
+        </div>
+
+        <!-- Persegi Panjang -->
+        <div
+          class="flex flex-col items-center justify-center h-36 w-36 xs:h-38 xs:w-38 sm:h-44 sm:w-44 md:h-52 md:w-52 bg-black text-white rounded-2xl bg-opacity-70 pb-2 hover:scale-105 hover:bg-opacity-80 duration-300 cursor-pointer shadow-md shadow-black backdrop-blur-[2px]"
+          onclick="window.location.href = './html/persegi_panjang.html'"
+        >
+          <img
+            src="../img/persegi-panjang.png"
+            alt="Persegi Panjang"
+            class="h-24 sm:h-36 md:h-36 lg:h-40 mt-1 lg:mt-2 sm:-mb-3 md:mb-2 lg:-mb-2"
+          />
+          <h2
+            class="font-semibold text-base sm:text-xl md:text-2xl pb-1 sm:pb-2 tracking-wide"
+          >
+            Persegi Panjang
+          </h2>
+        </div>
+
+        <!-- Jajar Genjang -->
+        <div
+          class="flex flex-col items-center justify-center h-36 w-36 xs:h-38 xs:w-38 sm:h-44 sm:w-44 md:h-52 md:w-52 bg-black text-white rounded-2xl bg-opacity-70 pb-2 hover:scale-105 hover:bg-opacity-80 duration-300 cursor-pointer shadow-md shadow-black backdrop-blur-[2px]"
+          onclick="window.location.href = './html/jajar_genjang.html'"
+        >
+          <img
+            src="../img/parallelogram.png"
+            alt="Jajar Genjang"
+            class="h-36 sm:h-44 md:h-52 -mt-5 sm:-mt-5 -mb-6 sm:-mb-8"
+          />
+          <h2
+            class="font-semibold text-base sm:text-xl md:text-2xl pb-1 sm:pb-2 tracking-wide"
+          >
+            Jajar Genjang
+          </h2>
+        </div>
+
+        <!-- Belah Ketupat -->
+        <div
+          class="flex flex-col items-center justify-center h-36 w-36 xs:h-38 xs:w-38 sm:h-44 sm:w-44 md:h-52 md:w-52 bg-black text-white rounded-2xl bg-opacity-70 pb-2 hover:scale-105 hover:bg-opacity-80 duration-300 cursor-pointer shadow-md shadow-black backdrop-blur-[2px]"
+          onclick="window.location.href = './html/belah_ketupat.html'"
+        >
+          <img
+            src="../img/rhombus.png"
+            alt="Belah Ketupat"
+            class="h-24 sm:h-28 sm:h-30 md:h-36 mb-1 md:mt-1"
+          />
+          <h2
+            class="font-semibold text-base sm:text-xl md:text-2xl tracking-wide"
+          >
+            Belah Ketupat
+          </h2>
+        </div>
+
+        <!-- Trapesium -->
+        <div
+          class="flex flex-col items-center justify-center h-36 w-36 xs:h-38 xs:w-38 sm:h-44 sm:w-44 md:h-52 md:w-52 bg-black text-white rounded-2xl bg-opacity-70 pb-2 hover:scale-105 hover:bg-opacity-80 duration-300 cursor-pointer shadow-md shadow-black backdrop-blur-[2px]"
+          onclick="window.location.href = './html/trapesium.html'"
+        >
+          <img
+            src="../img/trapezium.png"
+            alt="Trapesium"
+            class="h-28 sm:h-36 md:h-40 -mb-2 md:-mb-1"
+          />
+          <h2
+            class="font-semibold text-base sm:text-xl md:text-2xl pb-1 sm:pb-2 tracking-wide"
+          >
+            Trapesium
+          </h2>
+        </div>
+
+        <!-- Layang-Layang -->
+        <div
+          class="flex flex-col items-center justify-center h-36 w-36 xs:h-38 xs:w-38 sm:h-44 sm:w-44 md:h-52 md:w-52 bg-black text-white rounded-2xl bg-opacity-70 pb-2 hover:scale-105 hover:bg-opacity-80 duration-300 cursor-pointer shadow-md shadow-black backdrop-blur-[2px]"
+          onclick="window.location.href = './html/layang_layang.html'"
+        >
+          <img
+            src="../img/kite.png"
+            alt="Layang-layang"
+            class="h-[5.8rem] w-28 sm:h-28 md:h-36 sm:w-32 md:w-44 mt-2 sm:mt-3 md:mt-2"
+          />
+          <h2
+            class="font-semibold text-base sm:text-xl md:text-2xl tracking-wide"
+          >
+            Layang-layang
+          </h2>
+        </div>
+      </div>
+
+      <div
+        class="flex lg:flex-col items-start lg:items-end justify-end lg:justify-center h-16 lg:h-0 sm:h-20 -mt-2 lg:-mt-16 space-x-5 lg:space-y-5 pr-6"
+      >
+        <!-- Fitur History -->
+        <div
+          class="flex items-center justify-center border-[1.5px] w-11 sm:w-16 hover:scale-110 duration-300 cursor-pointer shadow-xl shadow-black bg-black bg-opacity-75 border-white p-2 sm:p-3 rounded-full"
+          onclick="changeWallpaper()"
+        >
+          <img
+            src="../img/wallpaper_icon.png"
+            alt="Change background"
+            class="h-6 sm:h-8"
+          />
+        </div>
+
+        <!-- Fitur Ganti Wallpaper -->
+        <div
+          class="flex items-center justify-center border-[1.5px] w-11 sm:w-16 hover:scale-110 duration-300 cursor-pointer shadow-xl shadow-black bg-black bg-opacity-75 border-white p-1 sm:p-2 rounded-full"
+          onclick=""
+        >
+          <img
+            src="../img/history.png"
+            alt="Change background"
+            class="h-8 sm:h-10"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="../main/change_background.js"></script>
+  </body>
+</html>
