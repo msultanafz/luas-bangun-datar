@@ -10,6 +10,9 @@ const backgrounds = [
 // Variabel untuk menyimpan indeks gambar saat ini
 let currentIndex = 0;
 
+// Background default
+const defaultBackground = backgrounds[0];
+
 // Fungsi untuk mengganti wallpaper ke gambar berikutnya
 function changeWallpaper() {
   // Hitung indeks gambar berikutnya
@@ -28,7 +31,7 @@ function changeWallpaper() {
     body.style.backgroundImage = `url(${newWallpaper})`;
     body.classList.remove("fade-out");
     body.classList.add("fade-in");
-  }, 0); // Durasi yang sama dengan transisi
+  }, 500); // Pastikan durasi yang sama dengan transisi CSS
 
   // Simpan URL wallpaper di localStorage agar pilihan ini berlaku di semua halaman
   localStorage.setItem("wallpaper", newWallpaper);
@@ -36,12 +39,10 @@ function changeWallpaper() {
 
 // Fungsi untuk menerapkan wallpaper yang tersimpan di localStorage
 function applySavedWallpaper() {
-  const savedWallpaper = localStorage.getItem("wallpaper");
-  if (savedWallpaper) {
-    const body = document.getElementById("body");
-    body.style.backgroundImage = `url(../../${savedWallpaper})`;
-    body.classList.add("fade-in");
-  }
+  const savedWallpaper = localStorage.getItem("wallpaper") || defaultBackground;
+  const body = document.getElementById("body");
+  body.style.backgroundImage = `url(../../${savedWallpaper})`;
+  body.classList.add("fade-in");
 }
 
 // Ketika halaman dimuat, cek apakah ada wallpaper tersimpan di localStorage
